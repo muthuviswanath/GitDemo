@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf0 <beans \ul xmlns\ulnone ="http://www.springframework.org/schema/beans"\
+	\ul xmlns\ulnone :\ul xsi\ulnone ="http://www.w3.org/2001/XMLSchema-instance"\
+	\ul xmlns\ulnone :context="http://www.springframework.org/schema/context"\
+	\ul xmlns\ulnone :\ul mvc\ulnone ="http://www.springframework.org/schema/mvc"\
+	\ul xsi\ulnone :schemaLocation="http://www.springframework.org/schema/beans\
+		http://www.springframework.org/schema/beans/spring-beans.xsd\
+		http://www.springframework.org/schema/context\
+		http://www.springframework.org/schema/context/spring-context.xsd\
+		http://www.springframework.org/schema/mvc\
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd">\
+\
+<context:component-scan base-package="com.rakuten"/>\
+<mvc:annotation-driven/>\
+<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">\
+<property name="prefix" value="/WEB-INF/views/"></property>\
+<property name="suffix" value =".\ul jsp\ulnone "></property>\
+</bean>\
+</beans>}
